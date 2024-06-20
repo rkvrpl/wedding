@@ -1,0 +1,11 @@
+.timer{
+	background-color: antiquewhite;
+}
+#timer{
+	background-color: khaki;
+	width: 500px;
+	height: 200px;
+}
+.today{
+	background-color: rgb(197, 77, 77);
+}
