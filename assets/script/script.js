@@ -53,10 +53,10 @@ function timer() {
 	document.querySelector('.minutes').textContent = minutes
 	document.querySelector('.hours').textContent = hours
 	document.querySelector('.days').textContent = days
-	document.querySelector('.timer__days').textContent = getNoun(days, 'День', 'Дня', 'Дней')
-	document.querySelector('.timer__hours').textContent = getNoun(hours, 'Час', 'Часа', 'Часов')
-	document.querySelector('.timer__minutes').textContent = getNoun(minutes, 'Минута', 'Минуты', 'Минут')
-	document.querySelector('.timer__seconds').textContent = getNoun(seconds, 'Секунда', 'Секунды', 'Секунд')
+	document.querySelector('.timer__days').textContent = getNoun(days, 'день', 'дня', 'дней')
+	document.querySelector('.timer__hours').textContent = getNoun(hours, 'час', 'часа', 'часов')
+	document.querySelector('.timer__minutes').textContent = getNoun(minutes, 'минута', 'минуты', 'минут')
+	document.querySelector('.timer__seconds').textContent = getNoun(seconds, 'секунда', 'секунды', 'секунд')
 	setTimeout(timer, 1000)
 }
 window.onload = function() {
