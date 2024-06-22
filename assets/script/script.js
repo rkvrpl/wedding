@@ -1,5 +1,23 @@
 "use strict"
 
+//прячущийся headet
+let lastScroll = 0
+const defaultOffset = 200
+const header = document.querySelector('.header')
+const scrollPosition = () => window.scrollY
+const containHide = () => header.classList.contains('hide')
+window.addEventListener('scroll', () =>{
+	if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset){
+		header.classList.add('hide')
+		console.log('down')
+	}
+	else if(scrollPosition() < lastScroll && containHide()){
+		header.classList.remove('hide')
+		console.log('up')
+	}
+	lastScroll = scrollPosition()
+})
+// таймер 
 function getNoun(number, one, two, five) {
 	let n = Math.abs(number)
 	n %= 100;
@@ -17,7 +35,7 @@ function getNoun(number, one, two, five) {
 }
 function timer() {
     let currentDate = new Date()
-    let deadline = new Date(2024, 6, 22, 23, 15)
+    let deadline = new Date(2024, 7, 9)
     const result = (deadline - currentDate)+1000
     if (result < 0) {
         const el = document.querySelector('.timer__container')
