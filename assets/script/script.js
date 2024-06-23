@@ -44,11 +44,16 @@ function timer() {
     let currentDate = new Date()
     let deadline = new Date(2024, 7, 9)
     const result = (deadline - currentDate)+1000
-    if (result < 0) {
+    if (result === 0) {
         const el = document.querySelector('.timer__container')
         el.innerHTML = `<div class='today'>Сегодня!</div>`
         return undefined
     }
+	else if(result < 0){
+		const el = document.querySelector('.timer__container')
+        el.innerHTML = `<div class='today'>Событие прошло!</div>`
+        return undefined
+	}
     let seconds = Math.floor((result/1000)%60)
     let minutes = Math.floor((result/1000/60)%60)
     let hours = Math.floor((result/1000/60/60)%24)
