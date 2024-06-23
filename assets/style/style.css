@@ -1,9 +1,21 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica_light.woff') format('woff'),
+	url('../fonts/helvetica_light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 html, body{
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
 	outline: none;
+	font-family:  Helvetica, Sans-Serif;
+}
+html{
+	scroll-behavior: smooth;
 }
 body{
 	padding-top: 70px;
@@ -35,6 +47,7 @@ li{
 }
 .site-name {
 	padding-left: 40px;
+	padding-top: 30px;
 }
 .nav {
 	display: flex;
@@ -54,7 +67,7 @@ li{
 	justify-content: flex-end;
 	align-items: center;
 	position: relative;
-	z-index: 4;
+	z-index: 3;
 	width: 30px;
 	height: 18px;
 	margin-top: 20px;
@@ -90,6 +103,9 @@ li{
 .burger.active::after{
 	bottom: 50%;
 	transform: rotate(45deg) translate(0, 50%);
+}
+.open{
+	display: flex !important;
 }
 .banner {
 	text-align: center;
@@ -134,8 +150,13 @@ li{
 @media(max-width: 800px){
 	.burger{
 		display: flex;
+		margin: 30px ;
+	}
+	.header{
+		justify-content: space-between;
 	}
 	.nav{
+		display: none;
 		justify-content:flex-start;
 		flex-direction: column;
 		position: fixed;
@@ -145,9 +166,10 @@ li{
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 10;
+		z-index: 3;
 		overflow-y: auto;
 		background-color: white;
+		animation: burgerAnimation 0.4s;
 	}
 	.nav-block{
 		flex-direction: column;
@@ -155,4 +177,8 @@ li{
 		gap: 15px;
 		padding: 0;
 	}
+}
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
 }

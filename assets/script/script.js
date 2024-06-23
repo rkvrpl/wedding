@@ -17,6 +17,13 @@ window.addEventListener('scroll', () =>{
 	}
 	lastScroll = scrollPosition()
 })
+
+//burger 
+document.querySelector('.burger').addEventListener('click', function() {
+	this.classList.toggle('active');
+	document.querySelector('.nav').classList.toggle('open');
+})
+
 // таймер 
 function getNoun(number, one, two, five) {
 	let n = Math.abs(number)
