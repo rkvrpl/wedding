@@ -1,222 +1,61 @@
-@font-face {
-    font-family: 'Helvetica';
-    src: url('../fonts/helvetica_light.woff') format('woff'),
-	url('../fonts/helvetica_light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-html, body{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	outline: none;
-	font-family:  Helvetica, Sans-Serif;
-}
-html{
-	scroll-behavior: smooth;
-}
-body{
-	padding-top: 70px;
-}
-a{
-	text-decoration: none;
-	color: black;
-}
-a:hover{
-	text-decoration: underline;
-}
-li{
-	list-style-type: none;
-}
-.header {
-	display: flex;
-	height: 70px;
-	background-color: white;
-	z-index: 3;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	transition: transform 0.3s linear;
-}
-.header.hide{
-	transform: translateY(-70px);
-}
-.site-name{
-	padding-left: 40px;
-	padding-top: 30px;
-}
-.nav {
-	display: flex;
-	justify-content: space-around;
-	width: 80%;
-	margin-top: 10px;
-}
-.nav-block {
-	display: flex;
-    justify-content: center;
-}
-.nav-point {
-	padding: 0 30px;
-}
-.burger{
-	display: none;
-	justify-content: flex-end;
-	align-items: center;
-	position: relative;
-	z-index: 3;
-	width: 30px;
-	height: 18px;
-	margin-top: 20px;
-}
-.burger span{
-	height: 2px;
-	width: 100%;
-	transform: scale(1);
-	background-color: black;
-}
-.burger::after,
-.burger::before{
-	content: '';
-	position: absolute;
-	height: 2px;
-	width: 100%;
-	background-color: black;
-	transition: all 0.4s ease 0s;
-}
-.burger::before{
-	top: 0;
-}
-.burger::after{
-	bottom: 0;
-}
-.burger.active span{
-	transform: scale(0);
-}
-.burger.active::before{
-	top: 50%;
-	transform: rotate(-45deg) translate(0, -50%);
-}
-.burger.active::after{
-	bottom: 50%;
-	transform: rotate(45deg) translate(0, 50%);
-}
-.open{
-	display: flex !important;
-}
-.banner {
-	text-align: center;
-}
-.banner-img{
-	width: 95%;
-}
 .timer {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 3vw 0;
-	height: 7vw;
+  background-color: antiquewhite;
 }
-.timer__container {
-	display: flex;
-	align-items: center;
-    justify-content: space-around;
-	background-color: #ee9b00;
-	color: #43300d;
-	width: 50%;
-	font-size: 1.8vw;
+#timer {
+  background-color: khaki;
+  width: 500px;
+  height: 200px;
 }
-.timer__container-small{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.today {
+  background-color: rgb(197, 77, 77);
 }
-.days,
-.hours,
-.minutes,
-.seconds{
-	font-size: 3vw;
-}
-.today{
-	font-size: 2.5vw;
-}
-.footer {
-	display: grid;
-	grid-template:
-	'site site'
-	'tg tg-orange';
-	background-color: #f8f8f8;
-	padding: 10px 20px 20px 20px;
-	/* height: 13vw; */
-}
-.footer__site-name{
-	grid-area: site;
-	padding-left: 30px;
-	font-size: 1.4rem;
-}
-.footer__container-small-one{
-	grid-area: tg;
-	margin-left: 30px;
-}
-.footer__container-small-two{
-	grid-area: tg-orange;
-}
-.footer__container-small-one,
-.footer__container-small-two{
-	display: flex;
-	align-items: center;
-	gap: 13px;
-	padding-bottom: 10px;
-}
-.footer-point {
-	display: block;
-	width: 4rem;
-}
-.footer-text {
-	width: 60%;
-	font-size: 1.5rem;
-	margin: 0 1vw;
-}
-@media(max-width: 800px){
-	.burger{
-		display: flex;
-		margin: 30px ;
-	}
-	.header{
-		justify-content: space-between;
-	}
-	.nav{
-		display: none;
-		justify-content:flex-start;
-		flex-direction: column;
-		position: fixed;
-		height: 100%;
-		width: 100%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 3;
-		overflow-y: auto;
-		background-color: white;
-		animation: burgerAnimation 0.4s;
-	}
-	.nav-block{
-		flex-direction: column;
-		align-items: center;
-		gap: 15px;
-		padding: 0;
-	}
-}
-@media(max-width: 786px){
-	
-}
-@media(max-width: 450px){
 
-
+.program-container {
+  max-width: 1200px;
+  display: grid;
+  justify-items: center;
+  margin: 50px;
 }
-@keyframes burgerAnimation {
-    from {opacity: 0}
-    to {opacity: 1}
+
+.title_program {
+  color: #ee9b01;
+  font-size: 40px;
+}
+.title_location {
+  color: #c53827;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.program-upper-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  gap: 60px;
+}
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #828282;
+  padding: 20px 0;
+}
+.schedule-day {
+  font-size: 24px;
+  color: #000000;
+  padding: 15px 0;
+}
+.schedule-day:first-child {
+  padding-top: 0;
+}
+.address {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.address a {
+  color: #555555;
+  font-size: 24px;
+  text-decoration: underline;
+  font-style: normal;
 }

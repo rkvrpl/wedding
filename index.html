@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/normalize.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <title>A+V</title>
-</head>
-<body>
-    <header class='header'>
-        <a class='site-name' href='#timer'>Site name</a>
-        <nav class='nav'>
-            <ul class='nav-block'>
-                <li class='nav-point'><a href='#'>приглашение</a></li>
-                <li class='nav-point'><a href='#'>программа</a></li>
-                <li class='nav-point'><a href='#'>локация</a></li>
-                <li class='nav-point'><a href='#'>Q&A</a></li>
-            </ul>
-        </nav>
-        <div class='burger'>
-            <span></span>
-        </div>
+  </head>
+  <body>
+    <header>
+      <p>Site name</p>
+      <nav>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Приглашение</a></li>
+          <li><a href="#">Программа</a></li>
+          <li><a href="#">Q&A</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class='banner'>
-            <img class='banner-img' src='./assets/img/banner.png' alt='banner'>
-        </section>
-        <section id='timer' class='timer'>
-            <div class='timer__container'>
-                <div class='timer__container-small'>
-                    <span class='days'></span>
-                    <span class='timer__days'></span>
-                </div>
-                <div class='timer__container-small'>
-                    <span class='hours'></span>
-                    <span class='timer__hours'></span>
-                </div>
-                <div class='timer__container-small'>
-                    <span class='minutes'></span>
-                    <span class='timer__minutes'></span>
-                </div>
-                <div class='timer__container-small'>
-                    <span class='seconds'></span>
-                    <span class='timer__seconds'></span>
-                </div>
-            </div>
-        </section>
+      <section>
+        <img src="./assets/img/banner.jpeg" alt="img" />
+      </section>
+      <section class="timer">
+        <div class="timer__container">
+          <div>
+            <span class="days"></span>
+            <span class="timer__days"></span>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <span class="timer__hours"></span>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <span class="timer__minutes"></span>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <span class="timer__seconds"></span>
+          </div>
+        </div>
+      </section>
+      
+      <section class="program-section">
+        <div class="program-container">        
+            <h2 class="title_program">ПРОГРАММА</h2>
+            <div class="program-upper-row">
+             <div class="program-schedule">
+      
+            <div class="schedule-day">9 августа</div>
+            <div class="schedule-item">
+           <div class="description">сбор гостей на площадке, велкам</div>
+                <div class="time">14:00</div>
+          </div>
+          <div class="schedule-item">
+            <div class="description">трогательная церемония</div>
+                 <div class="time">16:00</div>
+           </div>
+           <div class="schedule-item">
+            <div class="description">свадебный ужин с юморной вечеринкой</div>
+                 <div class="time-program">18:00</div>
+           </div>
+           <div class="schedule-item">
+            <div class="description">посиделки у костра с гитарой</div>
+                 <div class="time">21:00</div>
+           </div>
+           <div class="schedule-item">
+            <div class="description">окончание вечера</div>
+                 <div class="time">00:00</div>
+           </div>
+          <div class="schedule-day">10 августа</div>
+          <div class="schedule-item">
+            <div class="description">завтрак и сборы</div>
+                 <div class="time">10:00</div>
+           </div>
+           <div class="schedule-item">
+            <div class="description">выезд из отеля</div>
+                 <div class="time">12:00</div>
+           </div>
+             </div>
+          <div class="program-img">
+            <img src="./assets/img/program-img.png" alt="program picture" />
+          </div> 
+        </div> 
+          <h2 class="title_location">ЛОКАЦИЯ</h2>
+          <p class="address"><a href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16" target="_blank">Дачная ул., 5, посёлок Парконмяки</a></p>
+          <div class="program-lower-raw">
+          <div class="program-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ea2bc3d6dddb29db079de88d4ab8c64f2372066e19d42081af3293491ac25c&amp;source=constructor" width="1200" height="271" frameborder="0"></iframe>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
     </main>
-    <footer class='footer'>
-        <p class='footer__site-name'>Site name</p>
-            <div class='footer__container-small-one'>
-                <a class='footer-point' target='_blank' href='https://t.me/+MBzfroSd6fc1MDQy'><img src='./assets/icon/tg.svg' alt=''></a>
-                <p class='footer-text'>пожалуйста, добавляйтесь в чат гостей в телеграм <br />вся актуальная информация здесь</p>
-            </div>
-            <div class='footer__container-small-two'>
-                <a class='footer-point' target='_blank' href='https://t.me/AnnetBlackcity'><img src='./assets/icon/tg-orange.svg' alt=''></a>
-                <p class='footer-text'>контакты организатора  <br />Аня Черногородова</p>
-            </div>
+    <footer>
+      <div>
+        <p>Site name</p>
+        <ul>
+          <li>
+            <a href="#"><img src="./assets/icon/fb.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icon/in.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icon/yt.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/icon/inst.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+      </div>
     </footer>
     <script src="./assets/script/script.js"></script>
-</body>
+  </body>
 </html>
