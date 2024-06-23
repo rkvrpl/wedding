@@ -1,5 +1,30 @@
 "use strict"
 
+//прячущийся headet
+let lastScroll = 0
+const defaultOffset = 200
+const header = document.querySelector('.header')
+const scrollPosition = () => window.scrollY
+const containHide = () => header.classList.contains('hide')
+window.addEventListener('scroll', () =>{
+	if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset){
+		header.classList.add('hide')
+		console.log('down')
+	}
+	else if(scrollPosition() < lastScroll && containHide()){
+		header.classList.remove('hide')
+		console.log('up')
+	}
+	lastScroll = scrollPosition()
+})
+
+//burger 
+document.querySelector('.burger').addEventListener('click', function() {
+	this.classList.toggle('active');
+	document.querySelector('.nav').classList.toggle('open');
+})
+
+// таймер 
 function getNoun(number, one, two, five) {
 	let n = Math.abs(number)
 	n %= 100;
@@ -17,13 +42,18 @@ function getNoun(number, one, two, five) {
 }
 function timer() {
     let currentDate = new Date()
-    let deadline = new Date(2024, 6, 22, 23, 15)
+    let deadline = new Date(2024, 7, 9)
     const result = (deadline - currentDate)+1000
-    if (result < 0) {
+    if (result === 0) {
         const el = document.querySelector('.timer__container')
         el.innerHTML = `<div class='today'>Сегодня!</div>`
         return undefined
     }
+	else if(result < 0){
+		const el = document.querySelector('.timer__container')
+        el.innerHTML = `<div class='today'>Событие прошло!</div>`
+        return undefined
+	}
     let seconds = Math.floor((result/1000)%60)
     let minutes = Math.floor((result/1000/60)%60)
     let hours = Math.floor((result/1000/60/60)%24)
@@ -35,10 +65,10 @@ function timer() {
 	document.querySelector('.minutes').textContent = minutes
 	document.querySelector('.hours').textContent = hours
 	document.querySelector('.days').textContent = days
-	document.querySelector('.timer__days').textContent = getNoun(days, 'День', 'Дня', 'Дней')
-	document.querySelector('.timer__hours').textContent = getNoun(hours, 'Час', 'Часа', 'Часов')
-	document.querySelector('.timer__minutes').textContent = getNoun(minutes, 'Минута', 'Минуты', 'Минут')
-	document.querySelector('.timer__seconds').textContent = getNoun(seconds, 'Секунда', 'Секунды', 'Секунд')
+	document.querySelector('.timer__days').textContent = getNoun(days, 'день', 'дня', 'дней')
+	document.querySelector('.timer__hours').textContent = getNoun(hours, 'час', 'часа', 'часов')
+	document.querySelector('.timer__minutes').textContent = getNoun(minutes, 'минута', 'минуты', 'минут')
+	document.querySelector('.timer__seconds').textContent = getNoun(seconds, 'секунда', 'секунды', 'секунд')
 	setTimeout(timer, 1000)
 }
 window.onload = function() {
