@@ -144,12 +144,41 @@ a:hover {
   font-size: 2.5vw;
 }
 .footer {
+  display: grid;
+  grid-template:
+    "site site"
+    "tg tg-orange";
+  background-color: #f8f8f8;
+  padding: 10px 20px 20px 20px;
+  /* height: 13vw; */
 }
-.footer-block {
+.footer__site-name {
+  grid-area: site;
+  padding-left: 30px;
+  font-size: 1.4rem;
+}
+.footer__container-small-one {
+  grid-area: tg;
+  margin-left: 30px;
+}
+.footer__container-small-two {
+  grid-area: tg-orange;
+}
+.footer__container-small-one,
+.footer__container-small-two {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 10px;
 }
 .footer-point {
+  display: block;
+  width: 4rem;
 }
 .footer-text {
+  width: 60%;
+  font-size: 1.5rem;
+  margin: 0 1vw;
 }
 @media (max-width: 800px) {
   .burger {
@@ -181,6 +210,10 @@ a:hover {
     gap: 15px;
     padding: 0;
   }
+}
+@media (max-width: 786px) {
+}
+@media (max-width: 450px) {
 }
 @keyframes burgerAnimation {
   from {
