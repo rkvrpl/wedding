@@ -19,8 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  padding-top: 70px;
-  height: 3000px;
+  padding-top: 90px;
 }
 a {
   text-decoration: none;
@@ -34,7 +33,7 @@ a:hover {
 }
 .header {
   display: flex;
-  height: 70px;
+  height: 90px;
   background-color: white;
   z-index: 3;
   position: fixed;
@@ -44,7 +43,7 @@ a:hover {
   transition: transform 0.3s linear;
 }
 .header.hide {
-  transform: translateY(-70px);
+  transform: translateY(-90px);
 }
 .site-name {
   padding-left: 30px;
