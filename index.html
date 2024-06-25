@@ -9,14 +9,12 @@
   </head>
   <body>
     <header class="header">
-      <a class="site-name" href="#timer"
-        ><img src="./assets/icon/icon.svg" alt="icon"
-      /></a>
+      <a class="site-name" href="#timer">Site name</a>
       <nav class="nav">
         <ul class="nav-block">
-          <li class="nav-point"><a href="#">Приглашение</a></li>
-          <li class="nav-point"><a href="#">Программа</a></li>
-          <li class="nav-point"><a href="#">Локация</a></li>
+          <li class="nav-point"><a href="#">приглашение</a></li>
+          <li class="nav-point"><a href="#">программа</a></li>
+          <li class="nav-point"><a href="#">локация</a></li>
           <li class="nav-point"><a href="#">Q&A</a></li>
         </ul>
       </nav>
@@ -25,24 +23,36 @@
       </div>
     </header>
     <main>
-        <section class="banner">
-            <img class="banner-img" src="./assets/img/banner.png" alt="banner" />
-            </section>
-            <section id="timer" class="timer">
-            <div class="timer__container">
-                <span class="days"></span>
-                <span class="hours"></span>
-                <span class="minutes"></span>
-            </div>
+      <section class="banner">
+        <img class="banner-img" src="./assets/img/banner.png" alt="banner" />
+      </section>
+      <section id="timer" class="timer">
+        <div class="timer__container">
+          <div class="timer__container-small">
+            <span class="days"></span>
+            <span class="timer__days"></span>
+          </div>
+          <div class="timer__container-small">
+            <span class="hours"></span>
+            <span class="timer__hours"></span>
+          </div>
+          <div class="timer__container-small">
+            <span class="minutes"></span>
+            <span class="timer__minutes"></span>
+          </div>
+          <div class="timer__container-small">
+            <span class="seconds"></span>
+            <span class="timer__seconds"></span>
+          </div>
+        </div>
+      </section>
 
-            <section class="program-section">
-                <div class="program-container">        
-                    <h2 class="title_program">ПРОГРАММА</h2>
-                    <div class="program-upper-row">
-                     <div class="program-schedule">
-              
-                    <div class="schedule-day">9 августа</div>
-                    <div class="schedule-item">
+       <section class="program-section">       
+         <h2 class="section-title">ПРОГРАММА</h2>
+       <div class="program-container">        
+           <div class="program-schedule">
+     <div class="schedule-day">9 августа</div>
+<div class="schedule-item">
                    <div class="description">сбор гостей на площадке, велкам</div>
                         <div class="time">14:00</div>
                   </div>
@@ -65,27 +75,18 @@
                   <div class="schedule-day">10 августа</div>
                   <div class="schedule-item">
                     <div class="description">завтрак и сборы</div>
-                         <div class="time">10:00</div>
+             <div class="time">10:00</div>
                    </div>
-                   <div class="schedule-item">
+               <div class="schedule-item">
                     <div class="description">выезд из отеля</div>
-                         <div class="time">12:00</div>
+               <div class="time">12:00</div>
                    </div>
                      </div>
-                  <div class="program-img">
-                    <img src="./assets/img/program-img.png" alt="program picture" />
+                  <div class="immage-wrap_program">
+                    <img src="./assets/img/program-img.png" alt="program picture" class="program-img"/>
                   </div> 
-                </div> 
-                  <h2 class="title_location">ЛОКАЦИЯ</h2>
-                  <p class="address"><a href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16" target="_blank">Дачная ул., 5, посёлок Парконмяки</a></p>
-                  <div class="program-lower-raw">
-                  <div class="program-map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ea2bc3d6dddb29db079de88d4ab8c64f2372066e19d42081af3293491ac25c&amp;source=constructor" width="1200" height="271" frameborder="0"></iframe>
-                  </div>
-                </div>
-                </div>
-                </div>
-              </section>
+                 </div>
+                             </section>
               
 
               <div class="QA" id="QA">
@@ -210,6 +211,16 @@
                     </div>
                 </div>
                 </div>
+                <section class="location-section">
+                  <div class="location-container">
+                  <h2 class="section-title">ЛОКАЦИЯ</h2>
+                  <p class="address"><a href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16" target="_blank">Дачная ул., 5, посёлок Парконмяки</a></p>
+                    <div class="program-map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ea2bc3d6dddb29db079de88d4ab8c64f2372066e19d42081af3293491ac25c&amp;source=constructor" width="1200" height="271" frameborder="0"></iframe>
+                  </div>
+                
+              </div>
+                </section>
             </main>
             <footer class="footer">
                 <div class='footer__container'>
@@ -223,7 +234,7 @@
                     <a target='_blank' href="https://t.me/AnnetBlackcity"><img class='footer-point' src="./assets/icon/tg-orange.svg" alt="tg-orange" /></a>
                     <p class="footer-text">контакты организатора <br />Аня Черногородова</p>
                 </div>
-            </footer>
+                      </footer>
             <script src="./assets/script/script.js"></script>
   </body>
 </html>

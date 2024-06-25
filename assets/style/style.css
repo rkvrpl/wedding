@@ -136,6 +136,81 @@ a:hover {
 .today {
   font-size: 7vw;
 }
+
+.program-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin-top: 5vh;
+  width: 100%;
+}
+.program-container {
+  width: 95%;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 1.3fr 1fr;
+  background-color: #e1a5a559;
+  margin-top: 4vh;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #828282;
+  padding: 1.5vh 1.5vw 1.5vh 3vw;
+}
+.schedule-day {
+  font-size: 24px;
+  color: #000000;
+  padding: 15px 15px 0 3vw;
+}
+.schedule-day:first-child {
+  padding-top: 10%;
+}
+.schedule-item:last-child {
+  padding-bottom: 7%;
+}
+.immage-wrap_program {
+  overflow: visible;
+  position: relative;
+}
+.program-img {
+  width: 85%;
+  position: absolute;
+  bottom: -35px;
+  right: -15px;
+}
+
+.address {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.address a {
+  color: #555555;
+  font-size: 24px;
+  text-decoration: underline;
+  font-style: normal;
+}
+.location-section {
+  display: flex;
+  justify-content: center;
+}
+.location-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer {
   display: flex;
   background-color: #f8f8f8;
@@ -238,56 +313,15 @@ p.wishlist__text-item {
     gap: 15px;
     padding: 0;
   }
-}
-
-.program-container {
-  max-width: 1200px;
-  display: grid;
-  justify-items: center;
-  margin: 50px;
-}
-
-.title_program {
-  color: #ee9b01;
-  font-size: 40px;
-}
-.title_location {
-  color: #c53827;
-  font-size: 40px;
-  margin-bottom: 0;
-}
-
-.program-upper-row {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  gap: 60px;
-}
-.schedule-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  color: #828282;
-  padding: 20px 0;
-}
-.schedule-day {
-  font-size: 24px;
-  color: #000000;
-  padding: 15px 0;
-}
-.schedule-day:first-child {
-  padding-top: 0;
-}
-.address {
-  margin-top: 25px;
-  margin-bottom: 35px;
-}
-.address a {
-  color: #555555;
-  font-size: 24px;
-  text-decoration: underline;
-  font-style: normal;
+  .program-container {
+    width: 80%;
+  }
+  .program-map {
+    width: 75%;
+  }
+  .program-map iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 786px) {
