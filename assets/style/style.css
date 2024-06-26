@@ -232,6 +232,7 @@ a:hover {
   height: 70px;
   width: 139px;
   border: none;
+  z-index: 2;
 }
 .dresscode__button_right {
   background: url("../img/arrowRight.png") 50% 50% no-repeat;
@@ -239,10 +240,12 @@ a:hover {
   height: 70px;
   width: 139px;
   border: none;
+  z-index: 2;
 }
 .dresscode__container {
   width: 596px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .dresscode__slider {

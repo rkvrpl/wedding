@@ -118,7 +118,7 @@ document
   .addEventListener("click", function showPrevImg() {
     offset = offset - 596;
     if (offset < 0) {
-      offset = 596;
+      offset = 1192;
     }
     sliderWomen.style.left = -offset + "px";
   });
@@ -138,7 +138,7 @@ document
   .addEventListener("click", function showPrevImg() {
     offset = offset - 596;
     if (offset < 0) {
-      offset = 596;
+      offset = 1192;
     }
     sliderMen.style.left = -offset + "px";
   });
