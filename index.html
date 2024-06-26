@@ -1,146 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/normalize.css" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>A+V</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="site-name" href="#timer">Site name</a>
-      <nav class="nav">
-        <ul class="nav-block">
-          <li class="nav-point"><a href="#">приглашение</a></li>
-          <li class="nav-point"><a href="#">программа</a></li>
-          <li class="nav-point"><a href="#">локация</a></li>
-          <li class="nav-point"><a href="#">Q&A</a></li>
-        </ul>
-      </nav>
-      <div class="burger">
-        <span></span>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./assets/style/normalize.css" />
+<link rel="stylesheet" href="./assets/style/style.css" />
+<title>A+V</title>
+</head>
+<body>
+<header class="header">
+    <a class="site-name" href="#timer"><img src="./assets/icon/icon.svg" alt="icon"></a>
+    <nav class="nav">
+    <ul class="nav-block">
+        <li class="nav-point"><a href="#">Приглашение</a></li>
+        <li class="nav-point"><a href="#program">Программа</a></li>
+        <li class="nav-point"><a href="#location">Локация</a></li>
+        <li class="nav-point"><a href="#QA">Q&A</a></li>
+    </ul>
+    </nav>
+    <div class="burger">
+    <span></span>
+    </div>
+</header>
     <main>
-      <section class="banner">
-        <img class="banner-img" src="./assets/img/banner.png" alt="banner" />
-      </section>
-      <section id="timer" class="timer">
+    <section class="banner">
+    <img class="banner-img" src="./assets/img/banner.png" alt="banner" />
+    </section>
+    <section id="timer" class="timer">
         <div class="timer__container">
-          <div class="timer__container-small">
             <span class="days"></span>
-            <span class="timer__days"></span>
-          </div>
-          <div class="timer__container-small">
             <span class="hours"></span>
-            <span class="timer__hours"></span>
-          </div>
-          <div class="timer__container-small">
             <span class="minutes"></span>
-            <span class="timer__minutes"></span>
-          </div>
-          <div class="timer__container-small">
-            <span class="seconds"></span>
-            <span class="timer__seconds"></span>
-          </div>
         </div>
-      </section>
-
-       <section class="program-section">       
-         <h2 class="section-title">ПРОГРАММА</h2>
-       <div class="program-container">        
-           <div class="program-schedule">
-     <div class="schedule-day">9 августа</div>
-<div class="schedule-item">
-                   <div class="description">сбор гостей на площадке, велкам</div>
-                        <div class="time">14:00</div>
-                  </div>
-                  <div class="schedule-item">
+    </section>
+    <section class="program-section" id='program'>       
+        <h2 class="section-title">ПРОГРАММА</h2>
+        <div class="program-container">        
+            <div class="program-schedule">
+                <div class="schedule-day">9 августа</div>
+                <div class="schedule-item">
+                    <div class="description">сбор гостей на площадке, велкам</div>
+                    <div class="time">14:00</div>
+                </div>
+                <div class="schedule-item">
                     <div class="description">трогательная церемония</div>
-                         <div class="time">16:00</div>
-                   </div>
-                   <div class="schedule-item">
+                    <div class="time">16:00</div>
+                </div>
+                <div class="schedule-item">
                     <div class="description">свадебный ужин с юморной вечеринкой</div>
-                         <div class="time-program">18:00</div>
-                   </div>
-                   <div class="schedule-item">
+                    <div class="time-program">18:00</div>
+                </div>
+                <div class="schedule-item">
                     <div class="description">посиделки у костра с гитарой</div>
-                         <div class="time">21:00</div>
-                   </div>
-                   <div class="schedule-item">
+                    <div class="time">21:00</div>
+                </div>
+                <div class="schedule-item">
                     <div class="description">окончание вечера</div>
-                         <div class="time">00:00</div>
-                   </div>
-                  <div class="schedule-day">10 августа</div>
-                  <div class="schedule-item">
+                    <div class="time">00:00</div>
+                </div>
+                <div class="schedule-day">10 августа</div>
+                <div class="schedule-item">
                     <div class="description">завтрак и сборы</div>
-             <div class="time">10:00</div>
-                   </div>
-               <div class="schedule-item">
+                    <div class="time">10:00</div>
+                </div>
+                    <div class="schedule-item">
                     <div class="description">выезд из отеля</div>
-               <div class="time">12:00</div>
-                   </div>
-                     </div>
-                  <div class="immage-wrap_program">
-                    <img src="./assets/img/program-img.png" alt="program picture" class="program-img"/>
-                  </div> 
-                 </div>
-                             </section>
-              
-
-              <div class="QA" id="QA">
-                <h2>Q&A</h2>
-                <div class="dresscode">
-                    <div class="dresscode__text light">
-                    <p class="dresscode__text-item">гоу добавим красок в этот день!</p>
-                    <p class="dresscode__text-item">
-                        девушки, выбирайте наряды без принтов, в цветах из палитры, а
-                        мужчины — рубашку и брюки в натуральных природных оттенках. мы
-                        будем рады, если вы выберете комфортную одежду и будете
-                        чувствовать себя свободно на нашем празднике.
-                    </p>
-                    <p class="dresscode__text-item">
-                        собрали палитру и референсы для вдохновения, а для мальчишек даже
-                        добавили ссылки на Ламоду (Костя, все для тебя).
-                    </p>
+                    <div class="time">12:00</div>
+                </div>
+            </div>
+            <div class="immage-wrap_program">
+            <img src="./assets/img/program-img.png" alt="program picture" class="program-img"/>
+        </div> 
+        </div>
+    </section>
+        <div class="QA" id="QA">
+        <h2>Q&A</h2>
+        <div class="dresscode">
+            <div class="dresscode__text light">
+                <p class="dresscode__text-item">гоу добавим красок в этот день!</p>
+                <p class="dresscode__text-item">
+                    девушки, выбирайте наряды без принтов, в цветах из палитры, а
+                    мужчины — рубашку и брюки в натуральных природных оттенках. мы
+                    будем рады, если вы выберете комфортную одежду и будете
+                    чувствовать себя свободно на нашем празднике.
+                </p>
+                <p class="dresscode__text-item">
+                    собрали палитру и референсы для вдохновения, а для мальчишек даже
+                    добавили ссылки на Ламоду (Костя, все для тебя).
+                </p>
+            </div>
+            <div class="dresscode__main">
+                <div class="dresscode__section">
+                    <div class="dresscode__container">
+                    <div class="dresscode__slider women" id="sliderWomen">
+                        <img src="./assets/img/womenlook1.png" alt="женские образы" />
+                        <img src="./assets/img/womenlook2.png" alt="женские образы" />
+                        <img src="./assets/img/womenlook3.png" alt="женские образы" /></div>
                     </div>
-                    <div class="dresscode__main">
-                        <div class="dresscode__section">
-                            <div class="dresscode__container">
-                            <div class="dresscode__slider women" id="sliderWomen">
-                                <img src="./assets/img/womenlook1.png" alt="женские образы" />
-                                <img src="./assets/img/womenlook2.png" alt="женские образы" />
-                                <img src="./assets/img/womenlook3.png" alt="женские образы" /></div>
-                        
-                            </div>
-                            <div class="dresscode__button">
-                            <button class="dresscode__button_left" id="womenleft"></button>
-                            <button class="dresscode__button_right" id="womenright"></button>
-                        </div>
-                        </div>
-                        <div class="dresscode__section">
-                            <div class="dresscode__container">
-                            <div class="dresscode__slider men" id="sliderMen">
-                                <img src="./assets/img/menlook1.png" alt="мужские образы" />
-                                <img src="./assets/img/menlook2.png" alt="мужские образы" />
-                                <img src="./assets/img/menlook3.png" alt="мужские образы" />
-                            </div>
-                        
-                            </div>
-                            <div class="dresscode__button">
-                            <button class="dresscode__button_left" id="menleft"></button>
-                            <button class="dresscode__button_right" id="menright"></button>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="dresscode__palette">
-                    <img src="./assets/img/palette.png" alt="палитра" />
+                    <div class="dresscode__button">
+                    <button class="dresscode__button_left" id="womenleft"></button>
+                    <button class="dresscode__button_right" id="womenright"></button>
                     </div>
                 </div>
-                <div class="kit">
-                    <h2>ЧТО ВЗЯТЬ С СОБОЙ</h2>
-                    <ul>
+                <div class="dresscode__section">
+                    <div class="dresscode__container">
+                        <div class="dresscode__slider men" id="sliderMen">
+                            <img src="./assets/img/menlook1.png" alt="мужские образы" />
+                            <img src="./assets/img/menlook2.png" alt="мужские образы" />
+                            <img src="./assets/img/menlook3.png" alt="мужские образы" />
+                        </div>
+                    </div>
+                    <div class="dresscode__button">
+                        <button class="dresscode__button_left" id="menleft"></button>
+                        <button class="dresscode__button_right" id="menright"></button>
+                    </div>
+                </div>
+            </div>
+                <div class="dresscode__palette">
+                <img src="./assets/img/palette.png" alt="палитра" />
+                </div>
+            </div>
+            <div class="kit">
+                <h2>ЧТО ВЗЯТЬ С СОБОЙ</h2>
+                <ul>
                     <li>
                         сменная одежда <br />
                         <div class="light">
@@ -184,11 +166,11 @@
                     </li>
                     <li>солнцезащитные очки и SPF средство</li>
                     <li>вечериночное настроение:)</li>
-                    </ul>
-                </div>
-                <div class="wishlist">
-                    <h2>ВИШЛИСТ</h2>
-                    <div class="wishlist__container">
+                </ul>
+            </div>
+            <div class="wishlist">
+                <h2>ВИШЛИСТ</h2>
+                <div class="wishlist__container">
                     <div class="wishlist__text">
                         <p class="wishlist__text-item">
                         мы составили wish-лист подарков, которые были бы нам особенно
@@ -208,33 +190,32 @@
                     <div class="wishlist__link">
                         <a href="https://htmlbook.ru/html/attr/common" target="_blank"><img src="./assets/img/wishlist.png" alt="wishlist"></a>
                     </div>
-                    </div>
                 </div>
-                </div>
-                <section class="location-section">
-                  <div class="location-container">
-                  <h2 class="section-title">ЛОКАЦИЯ</h2>
-                  <p class="address"><a href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16" target="_blank">Дачная ул., 5, посёлок Парконмяки</a></p>
-                    <div class="program-map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ea2bc3d6dddb29db079de88d4ab8c64f2372066e19d42081af3293491ac25c&amp;source=constructor" width="1200" height="271" frameborder="0"></iframe>
-                  </div>
-                
-              </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class='footer__container'>
-                    <a target='_blank' href="https://t.me/+MBzfroSd6fc1MDQy"><img class='footer-point' src="./assets/icon/tg.svg" alt="tg" /></a>
-                    <p class="footer-text">
-                        пожалуйста, добавляйтесь в чат гостей в телеграм <br />вся актуальная
-                        информация здесь
-                    </p>
-                </div>
-                <div class='footer__container'>
-                    <a target='_blank' href="https://t.me/AnnetBlackcity"><img class='footer-point' src="./assets/icon/tg-orange.svg" alt="tg-orange" /></a>
-                    <p class="footer-text">контакты организатора <br />Аня Черногородова</p>
-                </div>
-                      </footer>
-            <script src="./assets/script/script.js"></script>
-  </body>
+            </div>
+        </div>
+    <section class="location-section" id='location'>
+        <div class="location-container">
+            <h2 class="section-title">ЛОКАЦИЯ</h2>
+            <p class="address"><a href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16" target="_blank">Дачная ул., 5, посёлок Парконмяки</a></p>
+            <div class="program-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ea2bc3d6dddb29db079de88d4ab8c64f2372066e19d42081af3293491ac25c&amp;source=constructor" width="1200" height="271" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+        </main>
+    <footer class="footer">
+        <div class='footer__container'>
+            <a target='_blank' href="https://t.me/+MBzfroSd6fc1MDQy"><img class='footer-point' src="./assets/icon/tg.svg" alt="tg" /></a>
+            <p class="footer-text">
+                пожалуйста, добавляйтесь в чат гостей в телеграм <br />вся актуальная
+                информация здесь
+            </p>
+        </div>
+        <div class='footer__container'>
+            <a target='_blank' href="https://t.me/AnnetBlackcity"><img class='footer-point' src="./assets/icon/tg-orange.svg" alt="tg-orange" /></a>
+            <p class="footer-text">контакты организатора <br />Аня Черногородова</p>
+        </div>
+                </footer>
+    <script src="./assets/script/script.js"></script>
+</body>
 </html>
