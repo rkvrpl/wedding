@@ -36,63 +36,97 @@ function timer() {
     const el = document.querySelector(".timer__container");
     el.innerHTML = `<div class='today'>Сегодня!</div>`;
     return undefined;
-  } 
+  }
   let minutes = Math.floor((result / 1000 / 60) % 60);
   let hours = Math.floor((result / 1000 / 60 / 60) % 24);
   let days = Math.floor(result / 1000 / 60 / 60 / 24);
   if (minutes < 10) minutes = "0" + minutes;
   if (hours < 10) hours = "0" + hours;
   document.querySelector(".minutes").textContent = minutes;
-  document.querySelector(".hours").textContent = hours + '/';
-  document.querySelector(".days").textContent = days + '/';
+  document.querySelector(".hours").textContent = hours + "/";
+  document.querySelector(".days").textContent = days + "/";
   setTimeout(timer, 60000);
 }
 window.onload = function () {
-  timer()
+  timer();
+};
+
+//Women Slider
+
+const imagesWomen = document.querySelectorAll("#sliderWomen img");
+const sliderLineWomen = document.querySelector("#sliderWomen");
+let countWomen = 0;
+let widthWomen;
+
+function initWomen() {
+  widthWomen = document.querySelector(".dresscode__container").offsetWidth;
+  sliderLineWomen.style.width = widthWomen * imagesWomen.length + "px";
+  imagesWomen.forEach((item) => {
+    item.style.width = widthWomen + "px";
+    item.style.height = "auto";
+  });
+  rollSliderWomen();
 }
 
-//Слайдер дресскода
+initWomen();
+window.addEventListener("resize", initWomen);
 
-let offset = 0;
-const sliderWomen = document.querySelector("#sliderWomen");
-const sliderMen = document.querySelector("#sliderMen");
+document.querySelector("#womenright").addEventListener("click", function () {
+  countWomen++;
+  if (countWomen >= imagesWomen.length) {
+    countWomen = 0;
+  }
+  rollSliderWomen();
+});
 
-document
-  .querySelector("#womenright")
-  .addEventListener("click", function showNextImg() {
-    offset = offset + 596;
-    if (offset > 1192) {
-      offset = 0;
-    }
-    sliderWomen.style.left = -offset + "px";
+document.querySelector("#womenleft").addEventListener("click", function () {
+  countWomen--;
+  if (countWomen < 0) {
+    countWomen = imagesWomen.length - 1;
+  }
+  rollSliderWomen();
+});
+
+function rollSliderWomen() {
+  sliderLineWomen.style.transform =
+    "translate(-" + countWomen * widthWomen + "px)";
+}
+
+// Men Slider
+const imagesMen = document.querySelectorAll("#sliderMen img");
+const sliderLineMen = document.querySelector("#sliderMen");
+let countMen = 0;
+let widthMen;
+
+function initMen() {
+  widthMen = document.querySelector(".dresscode__container").offsetWidth;
+  sliderLineMen.style.width = widthMen * imagesMen.length + "px";
+  imagesMen.forEach((item) => {
+    item.style.width = widthMen + "px";
+    item.style.height = "auto";
   });
+  rollSliderMen();
+}
 
-document
-  .querySelector("#womenleft")
-  .addEventListener("click", function showPrevImg() {
-    offset = offset - 596;
-    if (offset < 0) {
-      offset = 596;
-    }
-    sliderWomen.style.left = -offset + "px";
-  });
+initMen();
+window.addEventListener("resize", initMen);
 
-document
-  .querySelector("#menright")
-  .addEventListener("click", function showNextImg() {
-    offset = offset + 596;
-    if (offset > 1192) {
-      offset = 0;
-    }
-    sliderMen.style.left = -offset + "px";
-  });
+document.querySelector("#menright").addEventListener("click", function () {
+  countMen++;
+  if (countMen >= imagesMen.length) {
+    countMen = 0;
+  }
+  rollSliderMen();
+});
 
-document
-  .querySelector("#menleft")
-  .addEventListener("click", function showPrevImg() {
-    offset = offset - 596;
-    if (offset < 0) {
-      offset = 596;
-    }
-    sliderMen.style.left = -offset + "px";
-  });
+document.querySelector("#menleft").addEventListener("click", function () {
+  countMen--;
+  if (countMen < 0) {
+    countMen = imagesMen.length - 1;
+  }
+  rollSliderMen();
+});
+
+function rollSliderMen() {
+  sliderLineMen.style.transform = "translate(-" + countMen * widthMen + "px)";
+}
