@@ -17,11 +17,11 @@ body {
 }
 
 @media (max-width: 375px) {
-  body{
-   background-color: rgb(255, 248, 244);
+  body {
+    background-color: rgb(255, 248, 244);
   }
- }
- 
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -113,62 +113,62 @@ a:hover {
   transform: rotate(45deg) translate(0, 50%);
 }
 
-.invitation{
+.invitation {
   width: 95%;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.invitation__img{
+.invitation__img {
   width: 100%;
 }
 
-.invitation__info{
+.invitation__info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.invitation__paragraph{
+.invitation__paragraph {
   font-size: 20px;
 }
 
-.paragraph__bold{
+.paragraph__bold {
   font-weight: bolder;
 }
 
-.paragraph__italic{
+.paragraph__italic {
   font-style: italic;
 }
 
 @media (max-width: 375px) {
-  .wrapper{
+  .wrapper {
     grid-template-columns: 1fr;
   }
 
-  .invitation__info{
+  .invitation__info {
     grid-row: 1 / 2;
   }
 
-  .paragraph{
+  .paragraph {
     text-align: center;
     line-height: 30px;
     margin-bottom: 1rem;
   }
 
-  .title{
+  .title {
     font-size: 20px;
   }
 }
@@ -209,8 +209,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   width: 95%;
-  margin-top: 5vh;
-  width: 100%;
+  margin-top: 15vh;
 }
 .program-container {
   width: 95%;
@@ -433,31 +432,41 @@ h2 {
 @media (max-width: 786px) {
 }
 @media (max-width: 450px) {
+  .program-section {
+    margin-top: 8vh;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .schedule-item,
+  .schedule-day,
+  .address a {
+    font-size: 13px;
+  }
 }
 
-
-.wishlist{
+.wishlist {
   position: relative;
 }
 
-.wishlist__title{
+.wishlist__title {
   text-align: center;
 }
 
-.wishlist__wrapper{
+.wishlist__wrapper {
   background-color: rgba(247, 211, 159, 0.3);
   width: 95%;
   height: 60vh;
   margin: 0 auto;
 }
 
-.wishlist__paragraph{
+.wishlist__paragraph {
   font-size: 128px;
   padding: 1rem;
   font-weight: bolder;
 }
 
-.wishlist__img{
+.wishlist__img {
   position: absolute;
   width: 70%;
   right: 0;
@@ -465,34 +474,34 @@ h2 {
 }
 
 @media (max-width: 375px) {
-  .wishlist__wrapper{
+  .wishlist__wrapper {
     height: 20vh;
   }
 
-  .wishlist__paragraph{
+  .wishlist__paragraph {
     font-size: 36px;
   }
 }
 
-.flowers{
+.flowers {
   width: 95%;
   margin: 0 auto;
 }
 
-.flowers__wrapper{
+.flowers__wrapper {
   display: grid;
   grid-template-columns: 25% 75%;
-  gap:1rem;
+  gap: 1rem;
   width: 80%;
   margin: 0 auto;
 }
 
-.flowers__img{
+.flowers__img {
   display: flex;
   justify-content: right;
 }
 
-.flowers__info{
+.flowers__info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -500,29 +509,31 @@ h2 {
   align-content: center;
 }
 
-.flowers__paragraph{
+.flowers__paragraph {
   font-size: 24px;
 }
 
-.flowers__paragraph:first-child{
+.flowers__paragraph:first-child {
   margin-bottom: 1rem;
 }
 
-li{list-style-position:inside;}
+li {
+  list-style-position: inside;
+}
 
 @media (max-width: 375px) {
-  .flowers__wrapper{
+  .flowers__wrapper {
     grid-template-columns: 1fr;
   }
-  .flowers__img{
+  .flowers__img {
     display: none;
   }
-  .flowers__paragraph{
+  .flowers__paragraph {
     font-size: 13px;
   }
 }
 
-.qr{
+.qr {
   width: 95%;
   margin: 0 auto;
   display: grid;
@@ -530,7 +541,7 @@ li{list-style-position:inside;}
   margin-bottom: 2rem;
 }
 
-.qr__info{
+.qr__info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -538,43 +549,42 @@ li{list-style-position:inside;}
   align-content: center;
 }
 
-.qr__paragraph{
+.qr__paragraph {
   font-size: clamp(22px, 40px, 40px);
   font-weight: bolder;
   margin: 1rem 0;
 }
 
-.qr__photo{
+.qr__photo {
   display: flex;
   justify-content: center;
 }
 
-.qr__none{
+.qr__none {
   display: none;
 }
 
 @media (max-width: 375px) {
-  .qr{
+  .qr {
     grid-template-columns: 1fr;
   }
 
-  .qr__info{
+  .qr__info {
     align-items: center;
   }
 
-  .qr__none{
+  .qr__none {
     display: block;
     width: 40%;
   }
 
-  .qr__photo{
+  .qr__photo {
     display: none;
   }
 
-  .qr__paragraph{
+  .qr__paragraph {
     font-size: 13px;
     font-weight: bolder;
     text-align: center;
   }
 }
-
