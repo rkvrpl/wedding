@@ -13,10 +13,8 @@ window.addEventListener("scroll", () => {
     scrollPosition() > defaultOffset
   ) {
     header.classList.add("hide");
-    console.log("down");
   } else if (scrollPosition() < lastScroll && containHide()) {
     header.classList.remove("hide");
-    console.log("up");
   }
   lastScroll = scrollPosition();
 });
