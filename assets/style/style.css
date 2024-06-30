@@ -114,6 +114,7 @@ a:hover {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
+ font-style: italic;
 }
 .wrapper {
   display: grid;
@@ -564,14 +565,15 @@ li {
     font-size: 2.2vw;
   }
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 450px) {
+
   .wrapper {
     grid-template-columns: 1fr;
   }
   .invitation__info {
     grid-row: 1 / 2;
   }
-  .paragraph {
+  .invitation__paragraph {
     text-align: center;
     line-height: 30px;
     margin-bottom: 1rem;
