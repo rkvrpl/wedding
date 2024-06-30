@@ -275,29 +275,41 @@ h2 {
   line-height: 44px;
 }
 .dresscode {
+  width: 95%;
   text-align: center;
   margin: 10% 2.5%;
   font-size: 24px;
 }
-
-.dresscode__palette {
+.dresscode__text {
+  width: 75%;
+  margin: auto auto;
+}
+.dresscode__text-item {
+  margin: 3% auto;
+}
+#red {
+  color: #af0606e4;
+  font-weight: bold;
+}
+.dresscode .dresscode__palette {
   position: relative;
   z-index: 1;
-  width: 95%;
+}
+.dresscode__palette img {
+  display: block;
+  width: 100%;
 }
 
 .dresscode__main {
-  width: 95%;
   position: relative;
   z-index: 0;
-  margin-top: -4%;
+  margin-top: -8%;
   display: flex;
   justify-content: space-between;
 }
 
 .dresscode__button_left {
   background: url("../img/arrowLeft.png");
-
   height: 70px;
   width: 70px;
   border: none;
@@ -307,7 +319,6 @@ h2 {
 }
 .dresscode__button_right {
   background: url("../img/arrowRight.png");
-
   height: 70px;
   width: 70px;
   border: none;
@@ -324,7 +335,6 @@ h2 {
 }
 
 .dresscode__slider {
-  width: 1788px;
   height: 822px;
   display: flex;
   position: relative;
