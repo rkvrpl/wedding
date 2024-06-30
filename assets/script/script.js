@@ -67,6 +67,7 @@ function initWomen() {
 }
 
 initWomen();
+window.addEventListener("load", initWomen);
 window.addEventListener("resize", initWomen);
 
 document.querySelector("#womenright").addEventListener("click", function () {
@@ -107,6 +108,7 @@ function initMen() {
 }
 
 initMen();
+window.addEventListener("load", initMen);
 window.addEventListener("resize", initMen);
 
 document.querySelector("#menright").addEventListener("click", function () {
