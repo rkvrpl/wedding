@@ -209,8 +209,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   width: 95%;
-  margin-top: 5vh;
-  width: 100%;
+  margin-top: 15vh;
 }
 .program-container {
   width: 95%;
@@ -443,6 +442,17 @@ h2 {
 @media (max-width: 786px) {
 }
 @media (max-width: 450px) {
+  .program-section {
+    margin-top: 8vh;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .schedule-item,
+  .schedule-day,
+  .address a {
+    font-size: 13px;
+  }
 }
 
 .wishlist {
