@@ -189,7 +189,7 @@ a:hover {
   color: #000000;
   font-size: 40px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 900;
   margin-bottom: 0;
 }
 .schedule-item {
@@ -203,6 +203,9 @@ a:hover {
   font-size: 24px;
   color: #000000;
   padding: 15px 15px 0 3vw;
+}
+.time-program {
+  color: #000000;
 }
 .schedule-day:first-child {
   padding-top: 10%;
@@ -240,6 +243,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.program-map {
+  border: 2px #a6b564 solid;
 }
 .footer {
   display: flex;
@@ -522,10 +528,10 @@ li {
     padding: 0;
   }
   .program-container {
-    width: 80%;
+    width: 95%;
   }
   .program-map {
-    width: 75%;
+    width: 100%;
   }
   .program-map iframe {
     width: 100%;
@@ -538,8 +544,15 @@ li {
   .program-section {
     margin-top: 8vh;
   }
+  .program-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 7vh;
+  }
   .section-title {
     font-size: 20px;
+  }
+  .program-title {
+    font-weight: 900;
   }
   .schedule-item,
   .schedule-day,
@@ -547,6 +560,23 @@ li {
   .dresscode__text,
   .kit__text {
     font-size: 13px;
+  }
+  .schedule-item {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .program-img {
+    width: 50%;
+    bottom: -90px;
+    left: 120px;
+  }
+  .address {
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .program-map iframe {
+    width: 100%;
+    height: auto;
   }
   .footer {
     flex-direction: column;
