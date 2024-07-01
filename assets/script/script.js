@@ -25,6 +25,13 @@ document.querySelector(".burger").addEventListener("click", function () {
   document.querySelector(".nav").classList.toggle("open");
 });
 
+const nawPoint = document.querySelectorAll(".nav-point");
+for (let i = 0; i < nawPoint.length; i++) {
+  nawPoint[i].addEventListener('click', function () {
+    document.querySelector(".burger").classList.remove("active");
+  document.querySelector(".nav").classList.remove("open");
+  })
+}
 // таймер
 function timer() {
   let currentDate = new Date();

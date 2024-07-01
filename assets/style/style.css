@@ -139,6 +139,7 @@ a:hover {
 }
 .open {
   display: flex !important;
+  padding-top: 25px;
 }
 .banner {
   text-align: center;
@@ -157,7 +158,7 @@ a:hover {
   align-items: center;
   justify-content: space-around;
   color: #a6b564;
-  width: 70%;
+  width: 60%;
 }
 .days,
 .hours,
@@ -172,7 +173,6 @@ a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 95%;
   margin-top: 15vh;
 }
 .program-container {
@@ -250,34 +250,6 @@ a:hover {
   width: 100%;
   height: 17vw;
 }
-.footer {
-  display: flex;
-  background-color: #f8f8f8;
-  padding: 2.5vw;
-}
-.footer__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5vw;
-  width: 50%;
-}
-.footer-point {
-  display: block;
-  width: 4vw;
-}
-.footer-text {
-  width: 60%;
-  font-size: 1.5vw;
-}
-@keyframes burgerAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 h2 {
   font-size: 40px;
   font-style: italic;
@@ -297,22 +269,18 @@ h2 {
 .dresscode__text-item {
   margin: 3% auto;
 }
-
 #red {
   color: #af0606e4;
   font-weight: bold;
 }
-
 .dresscode .dresscode__palette {
   position: relative;
   z-index: 3;
 }
-
 .dresscode__palette img {
   display: block;
   width: 100%;
 }
-
 .dresscode__main {
   width: 100%;
   height: auto;
@@ -322,7 +290,6 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 }
-
 #dresscode__women {
   overflow: hidden;
   max-width: 43%;
@@ -351,14 +318,12 @@ h2 {
   right: -35%;
   bottom: 10%;
 }
-
 .dresscode__container {
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 0;
 }
-
 .dresscode__slider {
   max-height: auto;
   display: flex;
@@ -372,7 +337,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
 .section-title {
   text-align: center;
 }
@@ -385,40 +349,33 @@ h2 {
 .kit__item {
   margin: 2% 21% 2% 0;
 }
-
 .wishlist {
   position: relative;
 }
-
 .wishlist__title {
   text-align: center;
 }
-
 .wishlist__wrapper {
   background-color: rgba(247, 211, 159, 0.3);
   width: 95%;
   height: 60vh;
   margin: 0 auto;
 }
-
 .wishlist__paragraph {
   font-size: 128px;
   padding: 1rem;
   font-weight: bolder;
 }
-
 .wishlist__img {
   position: absolute;
   width: 70%;
   right: 0;
   bottom: -10px;
 }
-
 .flowers {
   width: 95%;
   margin: 0 auto;
 }
-
 .flowers__wrapper {
   display: grid;
   grid-template-columns: 25% 75%;
@@ -426,12 +383,10 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
-
 .flowers__img {
   display: flex;
   justify-content: right;
 }
-
 .flowers__info {
   display: flex;
   flex-wrap: wrap;
@@ -449,11 +404,12 @@ li {
   list-style-position: inside;
 }
 .qr {
-  width: 95%;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 70% 30%;
-  margin-bottom: 2rem;
+  grid-template-columns: 60% 20%;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 30px;
 }
 .qr__info {
   display: flex;
@@ -463,8 +419,8 @@ li {
   align-content: center;
 }
 .qr__paragraph {
-  font-size: 4vw;
-  font-weight: bolder;
+  font-size: 3.5vw;
+  font-weight: 900;
   margin: 1rem 0;
 }
 .qr__photo {
@@ -475,8 +431,34 @@ li {
   display: none;
 }
 .qr__img{
-  display: block;
   width: 40vw;
+}
+.footer {
+  display: flex;
+  background-color: #f8f8f8;
+  padding: 2.5vw;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  width: 50%;
+}
+.footer-point {
+  width: 4vw;
+}
+.footer-text {
+  width: 60%;
+  font-size: 1.5vw;
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 1255px) {
   .dresscode__main {
@@ -488,7 +470,35 @@ li {
     background-color: #00000020;
   }
 }
+@media (max-width: 1000px) {
+  .qr {
+    margin: 20px 0;
+  }
+  .qr__info {
+  width: 80%;
+  }
+  .qr__img{
+    width: 30vw;
+  }
+}
 @media (max-width: 800px) {
+  body {
+    padding-top: 0;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .invitation__info {
+    grid-row: 1 / 2;
+  }
+  .invitation__paragraph {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 1rem;
+  }
+  .title {
+    font-size: 20px;
+  }
   .dresscode__button_left {
     left: -27%;
   }
@@ -512,9 +522,6 @@ li {
   .burger::after,
   .burger::before {
     background-color: #ee9b00;
-  }
-  body {
-    padding-top: 0;
   }
   .header {
     justify-content: space-between;
@@ -557,6 +564,15 @@ li {
 @media (max-width: 450px) {
   body {
     background-color: rgb(255, 248, 244);
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 20vw;
+  }
+  .timer__container {
+    width: 80%;
   }
   .program-section {
     margin-top: 8vh;
@@ -601,36 +617,6 @@ li {
   .dresscode__button_right {
     right: -6%;
   }
-  .footer {
-    flex-direction: column;
-    background-color: #f8f8f8;
-    gap: 10px;
-  }
-  .footer__container {
-    width: 100%;
-  }
-  .footer-point {
-    display: block;
-    width: 10vw;
-  }
-  .footer-text {
-    width: 80%;
-    font-size: 3vw;
-  }
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-  .invitation__info {
-    grid-row: 1 / 2;
-  }
-  .invitation__paragraph {
-    text-align: center;
-    line-height: 30px;
-    margin-bottom: 1rem;
-  }
-  .title {
-    font-size: 20px;
-  }
   .flowers__wrapper {
     grid-template-columns: 1fr;
   }
@@ -641,7 +627,8 @@ li {
     font-size: 13px;
   }
   .qr {
-    grid-template-columns: 1fr;
+    display: flex;
+    margin: 0 auto;
   }
   .qr__info {
     align-items: center;
@@ -655,14 +642,31 @@ li {
   }
   .qr__paragraph {
     font-size: 13px;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
   }
   .wishlist__wrapper {
     height: 20vh;
   }
-
   .wishlist__paragraph {
     font-size: 36px;
+  }
+  .footer {
+    flex-direction: column;
+    background-color: #f8f8f8;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+  }
+  .footer__container {
+    width: 90%;
+  }
+  .footer-point {
+    display: block;
+    width: 12vw;
+  }
+  .footer-text {
+    width: 80%;
+    font-size: 3.5vw;
   }
 }
