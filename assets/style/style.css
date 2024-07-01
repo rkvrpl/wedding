@@ -1,9 +1,16 @@
 @font-face {
   font-family: "Helvetica";
   src: url("../fonts/helvetica_light.woff") format("woff"),
-    url("../fonts/helvetica_light.woff2") format("woff2"),
-    url("../fonts/helvetica_bold.woff") format("woff"),
+    url("../fonts/helvetica_light.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica_bold.woff") format("woff"),
     url("../fonts/helvetica_bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 800;
 }
 html,
 body {
@@ -374,7 +381,7 @@ h2 {
 }
 .flowers {
   width: 95%;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 .flowers__wrapper {
   display: grid;
@@ -565,6 +572,16 @@ li {
   body {
     background-color: rgb(255, 248, 244);
   }
+  .invitation__info{
+    align-items: center;
+  }
+  .paragraph__italic{
+    font-weight: 600;
+  }
+  .invitation__paragraph{
+    width: 90%;
+    font-size: 15px;
+  }
   .days,
   .hours,
   .minutes,
@@ -575,7 +592,7 @@ li {
     width: 80%;
   }
   .program-section {
-    margin-top: 8vh;
+    margin-top: 7vh;
   }
   .program-container {
     grid-template-columns: 1fr;
@@ -586,13 +603,15 @@ li {
   }
   .program-title {
     font-weight: 900;
+    line-height: 0;
+    margin-top: 10px;
   }
   .schedule-item,
   .schedule-day,
   .address a,
   .dresscode__text,
   .kit__text {
-    font-size: 13px;
+    font-size: 15px;
   }
   .schedule-item {
     padding-top: 1vh;
@@ -619,12 +638,13 @@ li {
   }
   .flowers__wrapper {
     grid-template-columns: 1fr;
+    font-size: 15px;
   }
   .flowers__img {
     display: none;
   }
   .flowers__paragraph {
-    font-size: 13px;
+    font-size: 15px;
   }
   .qr {
     display: flex;
@@ -641,8 +661,8 @@ li {
     display: none;
   }
   .qr__paragraph {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: bolder;
     text-align: center;
   }
   .wishlist__wrapper {
