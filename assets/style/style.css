@@ -276,15 +276,12 @@ h2 {
   font-size: 24px;
 }
 .dresscode__text {
-  width: 75%;
+  width: 65%;
   margin: auto auto;
 }
 .dresscode__text-item {
-  margin: 3% auto;
-}
-#red {
-  color: #af0606e4;
-  font-weight: bold;
+  margin: 3vw auto;
+  text-indent: 4vw;
 }
 .dresscode .dresscode__palette {
   position: relative;
@@ -358,10 +355,10 @@ h2 {
   margin: 15px auto;
 }
 .flowers__wrapper {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  gap: 1rem;
-  width: 80%;
+  display: flex;
+  gap: 3vw;
+  align-items: flex-start;
+  width: 60%;
   margin: 0 auto;
 }
 .flowers__img {
@@ -372,8 +369,10 @@ h2 {
   pointer-events: none;
 }
 .flowers__info {
+  margin-top: 5vw;
   display: flex;
   flex-wrap: wrap;
+  gap: 1vw;
   flex-direction: column;
   justify-content: center;
   align-content: center;
