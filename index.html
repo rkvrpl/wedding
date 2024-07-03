@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/svg" />
     <title>A+V</title>
@@ -52,7 +53,7 @@
               нам всем на долгие годы.
             </p>
             <p class="invitation__paragraph">
-              <span class="paragraph__bold"
+              <span class="paragraph__bold" id="timer"
                 >Ждём вас 9 августа в 14:00<span class="paragraph__italic"
                   ><br />Видовой ресторан Markens Grode</span
                 ></span
@@ -65,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section id="timer" class="timer">
+      <section class="timer">
         <div class="timer__container">
           <span class="days"></span>
           <span class="hours"></span>
@@ -124,13 +125,13 @@
             девушки, выбирайте наряды без принтов, в цветах из палитры. Отдавать предпочтение струящимся тканям, оборкам, воланам, романтичному образу. в общем чате можно будет обсудить наряды, чтобы не повторяться точь-в точь и разнообразить палитру образов, так кайфовее!
           </p>
           <p class="dresscode__text-item">у парней стиль Old Money - свободные расслабленные рубашки и брюки из натуральных тканей в природных оттенках. Избегать офисные варианты, приталенные рубашки и скинни-брюки, а еще принты. Допускается полоска в рубашках
-        </p>
+          </p>
           <p class="dresscode__text-item">Мы будем рады, если вы выберете комфортную одежду и будете чувствовать себя свободно на нашем празднике.
-        </p>
+          </p>
           <p class="dresscode__text-item">Собрали палитру и референсы для вдохновения на доске в пинтерест.
-        </p>
+          </p>
           <p class="dresscode__text-item"><a href="https://ru.pinterest.com/alesongrm/%D0%B3%D0%BE%D1%81%D1%82%D0%B8/?invite_code=11ff857580c14d3ca0d5ec03c4467f18&sender=597290106738496983" target="_blank" id="red">Доска с образами парней и девушек</a>
-        </p>
+          </p>
           <p class="dresscode__text-item">
             даже добавили ссылки на Ламоду (Костя, все для тебя). Кликайте на фото с образами, вас перекинет на сайт. 
           </p>
@@ -139,87 +140,78 @@
           <div class="dresscode__palette">
             <img src="./assets/img/palette.png" alt="палитра" />
           </div>
-          <div class="dresscode__main">
-            <div id="dresscode__women">
-              <div class="dresscode__container">
-                <div class="dresscode__slider women" id="sliderWomen">
-                  <img src="./assets/img/womenlook1.png" alt="женские образы" />
-                  <a href="https://www.lamoda.ru/p/mp002xw00a9j/clothes-isibris-plate/" target="_blank"><img src="./assets/img/womenlook2.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw0ww5h/clothes-neohit-plate/" target="_blank"><img src="./assets/img/womenlook3.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw0gebd/clothes-sandrine-plate/" target="_blank"><img src="./assets/img/womenlook4.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw14yir/clothes-loverepublic-plate/" target="_blank"><img src="./assets/img/womenlook5.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw00i1v/clothes-befree-plate/" target="_blank"><img src="./assets/img/womenlook6.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw01f4t/clothes-toptop-plate/" target="_blank"><img src="./assets/img/womenlook7.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw013cc/clothes-viandka-plate/" target="_blank"><img src="./assets/img/womenlook8.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/mp002xw0kysn/clothes-cavo-plate/" target="_blank"><img src="./assets/img/womenlook9.png" alt="женские образы" /></a>
-                  <a href="https://www.lamoda.ru/p/rtlado109201/clothes-mango-plate/" target="_blank"><img src="./assets/img/womenlook10.png" alt="женские образы" /></a>
+          <aside class='gallery-container'>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img class='gallery-img' src="./assets/img/womenlook1.png" alt="женские образы" /></a> 
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw00a9j/clothes-isibris-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook2.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw0ww5h/clothes-neohit-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook3.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw0gebd/clothes-sandrine-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook4.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw14yir/clothes-loverepublic-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook5.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw00i1v/clothes-befree-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook6.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw01f4t/clothes-toptop-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook7.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide"> <a href="https://www.lamoda.ru/p/mp002xw013cc/clothes-viandka-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook8.png" alt="женские образы" /></a></div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xw0kysn/clothes-cavo-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook9.png" alt="женские образы" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/rtlado109201/clothes-mango-plate/" target="_blank"><img class='gallery-img' src="./assets/img/womenlook10.png" alt="женские образы" /></a>
                 </div>
               </div>
-              <button class="dresscode__button_left" id="womenleft"></button>
-              <button class="dresscode__button_right" id="womenright"></button>
+              <div class="swiper-button-next button-next-women"></div>
+              <div class="swiper-button-prev button-prev-women"></div>
             </div>
-            <div id="dresscode__men">
-              <div class="dresscode__container">
-                <div class="dresscode__slider men" id="sliderMen">
-                  <img src="./assets/img/menlook1.png" alt="мужские образы"
-                  />
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm0vkly/clothes-ostin-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook2.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm00l8v/clothes-sela-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook3.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm0voz8/clothes-ostin-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook4.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm004lw/clothes-lufian-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook5.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/rtladf633001/clothes-hebymango-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook6.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/rtladf677202/clothes-hebymango-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook7.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm0voz7/clothes-ostin-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook8.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/rtladg202901/clothes-hebymango-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook9.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/rtladg412902/clothes-hebymango-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook10.png" alt="мужские образы"
-                  /></a>
-                  <a
-                    href="https://www.lamoda.ru/p/mp002xm008rn/clothes-befree-bryuki/"
-                    target="_blank"
-                    ><img src="./assets/img/menlook11.png" alt="мужские образы"
-                  /></a>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img class='gallery-img' src="./assets/img/menlook1.png" alt="мужские образы"/></a>
                 </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xm0vklyclothes-ostin-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook2.png" alt="мужские образы"/></a>
                 </div>
-                <button class="dresscode__button_left" id="menleft"></button>
-                <button class="dresscode__button_right" id="menright"></button>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xm00l8vclothes-sela-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook3.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xm0voz8clothes-ostin-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook4.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xm004lwclothes-lufian-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook5.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/rtladf633001/clothes-hebymango-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook6.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/rtladf677202/clothes-hebymango-bryuki/" target="_blank" ><img class='gallery-img' src="./assets/img/menlook7.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/mp002xm0voz7/clothes-ostin-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook8.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/rtladg202901/clothes-hebymango-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook9.png" alt="мужские образы"/></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.lamoda.ru/p/rtladg412902/clothes-hebymango-bryuki/" target="_blank"><img class='gallery-img' src="./assets/img/menlook10.png" alt="мужские образы"/></a>
+                </div>
               </div>
+              <div class="swiper-button-next button-next-men"></div>
+              <div class="swiper-button-prev button-prev-men"></div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
       <section class="kit">
@@ -320,7 +312,7 @@
       </section>
       <section class="location-section" id="location">
         <div class="location-container">
-          <h2 class="section-title">ЛОКАЦИЯ</h2>
+          <h2 class="section-title location-title">ЛОКАЦИЯ</h2>
           <p class="address">
             <a
               href="https://yandex.ru/maps/10933/republic-of-karelia/house/dachnaya_ulitsa_5/Z0kYdAVjTE0DQFhrfXl2cHRlYg==/?ll=30.223584%2C61.571866&z=16"
@@ -359,5 +351,17 @@
       </div>
     </footer>
     <script src="./assets/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
   </body>
 </html>

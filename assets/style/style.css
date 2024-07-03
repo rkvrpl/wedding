@@ -293,56 +293,23 @@ h2 {
 .dresscode__palette img {
   display: block;
   width: 100%;
+  pointer-events: none;
 }
-.dresscode__main {
-  width: 100%;
+.gallery-container{
+  display: flex;
+  flex-direction: row;
   height: auto;
   position: relative;
   z-index: 2;
-  margin-top: -5%;
-  display: flex;
-  justify-content: space-evenly;
+  margin: -5vw 0 30px 0;
 }
-#dresscode__women {
-  overflow: hidden;
-  max-width: 43%;
-  /* margin-right: 10%; */
+.gallery-img{
+  width: 30vw;
+  pointer-events: none;
 }
-#dresscode__men {
-  overflow: hidden;
-  max-width: 43%;
-  /* margin-left: 10%; */
-}
-.dresscode__button_left {
-  background: url("../img/arrowLeft.png");
-  height: 70px;
-  width: 70px;
-  border: none;
-  position: relative;
-  left: -35%;
-  bottom: 10%;
-}
-.dresscode__button_right {
-  background: url("../img/arrowRight.png");
-  height: 70px;
-  width: 70px;
-  border: none;
-  position: relative;
-  right: -35%;
-  bottom: 10%;
-}
-.dresscode__container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-}
-.dresscode__slider {
-  max-height: auto;
-  display: flex;
-  position: relative;
-  left: 0;
-  transition: all ease 1s;
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  color: #000000;
 }
 .kit__text {
   font-size: 24px;
@@ -478,16 +445,6 @@ li {
     opacity: 1;
   }
 }
-@media (max-width: 1255px) {
-  .dresscode__main {
-    flex-direction: column;
-    align-items: center;
-  }
-  #dresscode__women,
-  #dresscode__men{
-    background-color: #00000020;
-  }
-}
 @media (max-width: 1000px) {
   .qr {
     margin: 20px 0;
@@ -503,6 +460,12 @@ li {
   body {
     padding-top: 0;
   }
+  .gallery-container{
+    flex-wrap: wrap;
+  }
+  .gallery-img{
+    width: 85%;
+  }
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -513,12 +476,6 @@ li {
     text-align: center;
     line-height: 30px;
     margin-bottom: 1rem;
-  }
-  .dresscode__button_left {
-    left: -27%;
-  }
-  .dresscode__button_right {
-    right: -27%;
   }
   .banner-img {
     width: 100%;
@@ -583,6 +540,12 @@ li {
   h1,h2{
       font-size: 20px !important;
   }
+  .gallery-img{
+    width: 75%;
+  }
+  .title{
+    margin: 10px;
+  }
   .invitation__info{
     align-items: center;
   }
@@ -614,6 +577,10 @@ li {
     line-height: 0;
     margin-top: 10px;
   }
+  .section-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
   .schedule-item,
   .schedule-day,
   .address a,
@@ -637,12 +604,6 @@ li {
   .program-map iframe {
     width: 100%;
     height: auto;
-  }
-  .dresscode__button_left {
-    left: -6%;
-  }
-  .dresscode__button_right {
-    right: -6%;
   }
   .flowers__wrapper {
     grid-template-columns: 1fr;
@@ -678,6 +639,9 @@ li {
   }
   .wishlist__paragraph {
     font-size: 36px;
+  }
+  .location-title{
+    margin: 0;
   }
   .footer {
     flex-direction: column;

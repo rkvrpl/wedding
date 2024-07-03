@@ -58,82 +58,82 @@ window.onload = function () {
 
 //Women Slider
 
-const imagesWomen = document.querySelectorAll("#sliderWomen img");
-const sliderLineWomen = document.querySelector("#sliderWomen");
-let countWomen = 0;
-let widthWomen;
+// const imagesWomen = document.querySelectorAll("#sliderWomen img");
+// const sliderLineWomen = document.querySelector("#sliderWomen");
+// let countWomen = 0;
+// let widthWomen;
 
-function initWomen() {
-  widthWomen = document.querySelector(".dresscode__container").offsetWidth;
-  sliderLineWomen.style.width = widthWomen * imagesWomen.length + "px";
-  imagesWomen.forEach((item) => {
-    item.style.width = widthWomen + "px";
-    item.style.height = "auto";
-  });
-  rollSliderWomen();
-}
+// function initWomen() {
+//   widthWomen = document.querySelector(".dresscode__container").offsetWidth;
+//   sliderLineWomen.style.width = widthWomen * imagesWomen.length + "px";
+//   imagesWomen.forEach((item) => {
+//     item.style.width = widthWomen + "px";
+//     item.style.height = "auto";
+//   });
+//   rollSliderWomen();
+// }
 
-initWomen();
-window.addEventListener("load", initWomen);
-window.addEventListener("resize", initWomen);
+// initWomen();
+// window.addEventListener("load", initWomen);
+// window.addEventListener("resize", initWomen);
 
-document.querySelector("#womenright").addEventListener("click", function () {
-  countWomen++;
-  if (countWomen >= imagesWomen.length) {
-    countWomen = 0;
-  }
-  rollSliderWomen();
-});
+// document.querySelector("#womenright").addEventListener("click", function () {
+//   countWomen++;
+//   if (countWomen >= imagesWomen.length) {
+//     countWomen = 0;
+//   }
+//   rollSliderWomen();
+// });
 
-document.querySelector("#womenleft").addEventListener("click", function () {
-  countWomen--;
-  if (countWomen < 0) {
-    countWomen = imagesWomen.length - 1;
-  }
-  rollSliderWomen();
-});
+// document.querySelector("#womenleft").addEventListener("click", function () {
+//   countWomen--;
+//   if (countWomen < 0) {
+//     countWomen = imagesWomen.length - 1;
+//   }
+//   rollSliderWomen();
+// });
 
-function rollSliderWomen() {
-  sliderLineWomen.style.transform =
-    "translate(-" + countWomen * widthWomen + "px)";
-}
+// function rollSliderWomen() {
+//   sliderLineWomen.style.transform =
+//     "translate(-" + countWomen * widthWomen + "px)";
+// }
 
-// Men Slider
-const imagesMen = document.querySelectorAll("#sliderMen img");
-const sliderLineMen = document.querySelector("#sliderMen");
-let countMen = 0;
-let widthMen;
+// // Men Slider
+// const imagesMen = document.querySelectorAll("#sliderMen img");
+// const sliderLineMen = document.querySelector("#sliderMen");
+// let countMen = 0;
+// let widthMen;
 
-function initMen() {
-  widthMen = document.querySelector(".dresscode__container").offsetWidth;
-  sliderLineMen.style.width = widthMen * imagesMen.length + "px";
-  imagesMen.forEach((item) => {
-    item.style.width = widthMen + "px";
-    item.style.height = "auto";
-  });
-  rollSliderMen();
-}
+// function initMen() {
+//   widthMen = document.querySelector(".dresscode__container").offsetWidth;
+//   sliderLineMen.style.width = widthMen * imagesMen.length + "px";
+//   imagesMen.forEach((item) => {
+//     item.style.width = widthMen + "px";
+//     item.style.height = "auto";
+//   });
+//   rollSliderMen();
+// }
 
-initMen();
-window.addEventListener("load", initMen);
-window.addEventListener("resize", initMen);
+// initMen();
+// window.addEventListener("load", initMen);
+// window.addEventListener("resize", initMen);
 
-document.querySelector("#menright").addEventListener("click", function () {
-  countMen++;
-  if (countMen >= imagesMen.length) {
-    countMen = 0;
-  }
-  rollSliderMen();
-});
+// document.querySelector("#menright").addEventListener("click", function () {
+//   countMen++;
+//   if (countMen >= imagesMen.length) {
+//     countMen = 0;
+//   }
+//   rollSliderMen();
+// });
 
-document.querySelector("#menleft").addEventListener("click", function () {
-  countMen--;
-  if (countMen < 0) {
-    countMen = imagesMen.length - 1;
-  }
-  rollSliderMen();
-});
+// document.querySelector("#menleft").addEventListener("click", function () {
+//   countMen--;
+//   if (countMen < 0) {
+//     countMen = imagesMen.length - 1;
+//   }
+//   rollSliderMen();
+// });
 
-function rollSliderMen() {
-  sliderLineMen.style.transform = "translate(-" + countMen * widthMen + "px)";
-}
+// function rollSliderMen() {
+//   sliderLineMen.style.transform = "translate(-" + countMen * widthMen + "px)";
+// }
