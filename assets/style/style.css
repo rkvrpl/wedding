@@ -184,8 +184,8 @@ a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 15vh;
-  margin-bottom: 20px;
+  margin-top: 90px;
+  margin-bottom: 10px;
 }
 .program-container {
   width: 95%;
@@ -193,7 +193,7 @@ a:hover {
   justify-items: stretch;
   grid-template-columns: 1.3fr 1fr;
   background-color: #e1a5a559;
-  margin-top: 4vh;
+  margin-top: 2vw;
 }
 .section-title {
   color: #000000;
@@ -514,9 +514,6 @@ li {
     line-height: 30px;
     margin-bottom: 1rem;
   }
-  .title {
-    font-size: 20px;
-  }
   .dresscode__button_left {
     left: -27%;
   }
@@ -583,6 +580,9 @@ li {
   body {
     background-color: rgb(255, 248, 244);
   }
+  h1,h2{
+      font-size: 20px !important;
+  }
   .invitation__info{
     align-items: center;
   }
@@ -608,9 +608,6 @@ li {
   .program-container {
     grid-template-columns: 1fr;
     padding-bottom: 7vh;
-  }
-  .section-title {
-    font-size: 20px;
   }
   .program-title {
     font-weight: 900;
