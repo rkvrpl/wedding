@@ -141,6 +141,10 @@ a:hover {
 .invitation__paragraph {
   font-size: 20px;
 }
+#red {
+  color: #af0606e4;
+  font-weight: bold;
+}
 .paragraph__bold {
   font-weight: bolder;
 }
@@ -302,7 +306,6 @@ h2 {
 }
 .gallery-img{
   width: 30vw;
-  pointer-events: none;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after{
