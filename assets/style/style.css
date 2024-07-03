@@ -26,6 +26,7 @@ html {
 }
 body {
   padding-top: 90px;
+  overflow-x : hidden;
 }
 a {
   text-decoration: none;
