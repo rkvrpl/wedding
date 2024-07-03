@@ -266,7 +266,7 @@ h2 {
 .dresscode {
   width: 95%;
   text-align: center;
-  margin: 10% 2.5%;
+  margin: 10% 2.5% 0 2.5%;
   font-size: 24px;
 }
 .dresscode__text {
@@ -402,7 +402,7 @@ h2 {
   align-content: center;
 }
 .flowers__paragraph {
-  font-size: 24px;
+  font-size: 2vw;
 }
 .flowers__paragraph:first-child {
   margin-bottom: 1rem;
@@ -422,13 +422,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: center;
 }
 .qr__paragraph {
-  font-size: 3.5vw;
-  font-weight: 900;
+  font-size: 3vw;
+  font-weight: 800;
   margin: 1rem 0;
+  width: 80%;
 }
 .qr__photo {
   display: flex;
