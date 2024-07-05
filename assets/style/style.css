@@ -346,11 +346,14 @@ h2 {
   width: 95%;
   height: 60vh;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 .wishlist__paragraph {
-  font-size: 128px;
+  font-size: 9vw;
   padding: 1rem;
   font-weight: bolder;
+  font-style: italic;
 }
 .wishlist__img {
   position: absolute;
@@ -631,13 +634,17 @@ li {
   .flowers {
     margin-top: 30px;
   }
+  .flowers__img{
+    justify-content: center;
+  }
   .flowers__wrapper {
+    display: grid;
     width: 85%;
     grid-template-columns: 1fr;
     font-size: 15px;
   }
-  .flowers__img {
-    display: none;
+  .flowers__info{
+    grid-row: 1/2;
   }
   .flowers__paragraph {
     font-size: 15px;
@@ -679,6 +686,9 @@ li {
   }
   .wishlist__paragraph {
     font-size: 36px;
+  }
+  .wishlist__img {
+    width: 60%;
   }
   .location-title {
     margin: 0;
