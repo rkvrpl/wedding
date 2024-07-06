@@ -209,12 +209,16 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.schedule-item {
+.schedule-item,
+.schedule-item-text {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
   color: #828282;
   padding: 1.5vh 1.5vw 1.5vh 3vw;
+}
+.schedule-item-text{
+  margin-top: 10px;
 }
 .schedule-day {
   font-size: 24px;
@@ -610,13 +614,15 @@ li {
     margin-bottom: 10px;
   }
   .schedule-item,
+  .schedule-item-text,
   .schedule-day,
   .address a,
   .dresscode__text,
   .kit__text {
     font-size: 15px;
   }
-  .schedule-item {
+  .schedule-item,
+  .schedule-item-text {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
