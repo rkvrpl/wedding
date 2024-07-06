@@ -301,6 +301,9 @@ h2 {
   width: 100%;
   pointer-events: none;
 }
+.swiper{
+  width: 50%;
+}
 .gallery-container {
   display: flex;
   flex-direction: row;
@@ -310,7 +313,7 @@ h2 {
   margin: -5vw 0 30px 0;
 }
 .gallery-img {
-  width: 30vw;
+  width: 33vw;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -479,6 +482,9 @@ li {
   .gallery-container {
     flex-wrap: wrap;
   }
+  .swiper{
+    width: 100%;
+  }
   .gallery-img {
     width: 85%;
   }
@@ -636,6 +642,9 @@ li {
   }
   .flowers__img{
     justify-content: center;
+  }
+  .flowers__photo {
+    width: 18vw;
   }
   .flowers__wrapper {
     display: grid;
