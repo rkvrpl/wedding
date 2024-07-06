@@ -115,7 +115,7 @@ a:hover {
 .invitation {
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 .title {
   text-align: center;
@@ -127,7 +127,8 @@ a:hover {
 .wrapper {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 55% 45%;
+  justify-items: center;
 }
 .invitation__img {
   width: 100%;
@@ -137,9 +138,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 90%;
 }
 .invitation__paragraph {
-  font-size: 20px;
+  font-size: 22px;
 }
 #red {
   color: #af0606e4;
@@ -284,13 +286,13 @@ h2 {
   font-size: 24px;
 }
 .dresscode__text {
-  width: 65%;
+  width: 70%;
   margin: auto auto;
 }
 .dresscode__text-item {
   margin: 3vw auto;
-  text-indent: 4vw;
   line-height: 1.5;
+  text-align: center;
 }
 .dresscode .dresscode__palette {
   position: relative;
@@ -385,23 +387,21 @@ h2 {
 }
 .flowers__info {
   margin-top: 5vw;
+  font-size: 1.6vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 1vw;
+  gap: 2vw;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 .flowers__paragraph {
-  font-size: 2vw;
+  
   line-height: 1.5;
 }
 .flowers__info ul li {
   line-height: 1.5;
   padding-left: 15px;
-}
-.flowers__paragraph:first-child {
-  margin-bottom: 1rem;
 }
 li {
   list-style-position: inside;
@@ -488,6 +488,9 @@ li {
   .gallery-img {
     width: 85%;
   }
+  .invitation {
+    margin-bottom: 4rem;
+  }
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -566,6 +569,9 @@ li {
   .gallery-img {
     width: 75%;
   }
+  .invitation {
+    margin-bottom: 2rem;
+  }
   .title {
     margin: 10px;
   }
@@ -577,7 +583,6 @@ li {
   }
   .invitation__paragraph {
     width: 90%;
-    font-size: 15px;
   }
   .days,
   .hours,
@@ -650,13 +655,12 @@ li {
     display: grid;
     width: 85%;
     grid-template-columns: 1fr;
-    font-size: 15px;
   }
   .flowers__info{
     grid-row: 1/2;
+    font-size: 15px;
   }
   .flowers__paragraph {
-    font-size: 15px;
     line-height: 1.4;
   }
   .kit__item {
